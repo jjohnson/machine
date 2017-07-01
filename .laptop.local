@@ -1,22 +1,20 @@
 #!/bin/sh
+# cask install flash-npapi
 
 brew bundle --file=- <<EOF
-brew "cocoapods"
 brew "git-open"
 brew "shellcheck"
 brew "watch"
+
 tap  "caskroom/cask"
 cask "adobe-reader"
-cask "android-studio"
 cask "caffeine"
 cask "datagrip"
-cask "docker-toolbox"
+cask "docker"
 cask "dropbox"
 cask "evernote"
 cask "flux"
-cask "genymotion"
 cask "google-chrome"
-cask "gpgtools"
 cask "iterm2"
 cask "java"
 cask "mongodb"
@@ -25,7 +23,6 @@ cask "robomongo"
 cask "rubymine"
 cask "slack"
 cask "spotify"
-cask "virtualbox"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
@@ -36,4 +33,3 @@ if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
   rcup
 fi
-
