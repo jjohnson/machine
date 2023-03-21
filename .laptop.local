@@ -1,28 +1,24 @@
 #!/bin/sh
-# cask install flash-npapi
 
 brew bundle --file=- <<EOF
 brew "git-open"
 brew "shellcheck"
 brew "watch"
 
-tap  "caskroom/cask"
-cask "adobe-reader"
+tap  "homebrew/cask"
+cask "adobe-acrobat-reader"
 cask "caffeine"
-cask "datagrip"
 cask "docker"
 cask "dropbox"
 cask "evernote"
 cask "flux"
 cask "google-chrome"
 cask "iterm2"
-cask "java"
-cask "mongodb"
 cask "ngrok"
-cask "robomongo"
 cask "rubymine"
 cask "slack"
 cask "spotify"
+cask "zoom"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
